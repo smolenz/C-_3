@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="ListViewItemScheduler.ListViewItemSchedulerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ListViewItemScheduler"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" >
+    <StackPanel Orientation="Horizontal">
+        <Button x:Name="btnEdit" VerticalAlignment="Center" HorizontalAlignment="Center"
+                                        Width="25" ToolTip="Добавить" Click="btnEdit_Click">
+            <Image Source="pencil.png"  />
+        </Button>
+        <xctk:MaskedTextBox x:Name="dateTimeTextBox" Width="120" Mask="00/00/0000 00:00"/>
+        <Button x:Name="btnDelete" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                        Width="25" Height="25" ToolTip="Редактировать" Click="btnDelete_Click">
+            <Image Source="delete.png"/>
+        </Button>
+        
+    </StackPanel>
+</UserControl>
